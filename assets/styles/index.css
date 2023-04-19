@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@import "reset.css";
+.header {
+  min-height: 5.625rem;
+  height: 100%;
+  width: 100%;
+  padding: 2rem 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav__list__item {
+  margin-right: 3rem;
+}
+
+.header-nav__list__item-link {
+  font-size: 16px;
+  color: #000;
+}
+
+.header-nav__list__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav__list__right__item {
+  display: block;
+}
+
+.header-nav__list__right__item:first-child {
+  display: block;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #FFFFFF;
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("@/assets/images/hero.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: calc(98vh - 5.625rem);
+}
+.hero-content {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+}
+.hero-content__title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.hero-content__description {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  margin-bottom: 5rem;
+}
+.hero__btn {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background: #FFF;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.btn__cta {
+  opacity: 1;
+  font-size: 1.5rem;
+  background: red;
+  padding: 0.5rem 1rem;
+  color: #FFFFFF;
+}
+.btn__cta:hover, .btn__cta:focus {
+  opacity: 0.85;
+  padding: 0.5rem 1.25rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  padding-top: 10px;
+}
+
+.header-nav__list__right__item:hover .dropdown {
+  display: block;
+  cursor: pointer;
+  background: #FFFFFF;
+  min-width: 250px;
+  margin-right: 250px;
+  padding-left: 10px;
+  text-align: left;
+  box-shadow: 0 3px 5px -1px #ccc;
+}
+
+.dropdown li {
+  padding: 10px 0;
+}
+
+.dropdown li a {
+  transition: all 0.5s ease;
+}
+
+.dropdown li a:hover {
+  padding-left: 10px;
+  border-left: 2px solid red;
+  transition: all 0.3s ease;
+}
+
+/*# sourceMappingURL=index.css.map */

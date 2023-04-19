@@ -1,0 +1,8 @@
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("@/assets/images/hero.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: calc(98vh - 5.625rem);
+}
+
+/*# sourceMappingURL=hero.css.map */
