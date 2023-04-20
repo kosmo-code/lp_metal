@@ -29,7 +29,7 @@
                         Краснодар &dtrif;
                     </a>
                     <ul class="dropdown">
-                        <li><a href="#">Черкессия</a></li>
+                        <li><a href="#">Сочи</a></li>
                         <li><a href="#">Ростов-на-Дону</a></li>
                         <li><a href="#">Махачкала</a></li>
                         <li><a href="#">Ставрополь</a></li>
