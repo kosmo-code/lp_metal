@@ -3,42 +3,42 @@
         <nav role="navigation" class="header-nav wrapper">
             <ul class="header-nav__list">
                 <li class="header-nav__list__item">
-                    <a href="" class="header-nav__list__item-link logo">
+                    <NuxtLink to="/" class="header-nav__list__item-link logo">
                         LOGO_M
-                    </a>
+                    </NuxtLink>
                 </li>
                 <li class="header-nav__list__item">
-                    <a href="" class="header-nav__list__item-link btn__cta">
+                    <NuxtLink to="/" class="header-nav__list__item-link btn__cta">
                         Консультация
-                    </a>
+                    </NuxtLink>
                 </li>
                 <li class="header-nav__list__item">
-                    <a href="" class="header-nav__list__item-link">
+                    <NuxtLink to="/" class="header-nav__list__item-link">
                         Каталоги
-                    </a>
+                    </NuxtLink>
                 </li>
                 <li class="header-nav__list__item">
-                    <a href="" class="header-nav__list__item-link">
+                    <NuxtLink to="/" class="header-nav__list__item-link">
                         Контакты
-                    </a>
+                    </NuxtLink>
                 </li>
             </ul>
             <ul class="header-nav__list__right">
                 <li class="header-nav__list__right__item">
-                    <a href="" class="header-nav__list__right__item-link">
+                    <NuxtLink to="" class="header-nav__list__right__item-link">
                         Краснодар &dtrif;
-                    </a>
+                    </NuxtLink>
                     <ul class="dropdown">
-                        <li><a href="#">Сочи</a></li>
-                        <li><a href="#">Ростов-на-Дону</a></li>
-                        <li><a href="#">Махачкала</a></li>
-                        <li><a href="#">Ставрополь</a></li>
+                        <li><NuxtLink to="#">Сочи</NuxtLink></li>
+                        <li><NuxtLink to="#">Ростов-на-Дону</NuxtLink></li>
+                        <li><NuxtLink to="#">Махачкала</NuxtLink></li>
+                        <li><NuxtLink to="#">Ставрополь</NuxtLink></li>
                     </ul>
                 </li>
                 <li class="header-nav__list__right__item">
-                    <a href="" class="header-nav__list__right__item-link">
+                    <NuxtLink to="" class="header-nav__list__right__item-link">
                         8 901 234 56 78
-                    </a>
+                    </NuxtLink>
                 </li>
             </ul>
         </nav>
@@ -56,12 +56,26 @@ export default ({
 
 $lightgrey: #F8F8F8;
 
+.header:before,
+.header:after {
+    content: " ";
+    display: table;
+}
+.header:after {
+    clear: both;
+}
+
 .header {
-    min-height: 5.625rem;
-    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #F8F8F8;
+    z-index: 2;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+    height: 5.625rem;
     width: 100%;
     padding: 2rem 0;
-    box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+    //box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
 }
 .header-nav {
     display: flex;
