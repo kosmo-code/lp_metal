@@ -27,6 +27,7 @@ export default {
   background-size: cover;
   object-fit: cover;
   height: calc(98vh - 5.625rem);
+  overflow: hidden;
   &-content {
     padding-top: 4rem;
     display: flex;

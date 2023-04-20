@@ -1,5 +1,5 @@
 <template>
-    <div class="contacts my-5" ref="">
+    <div class="contacts mt-5" ref="">
         <div class="contacts__content">
             <div class="contacts__content-text">
                 <h1 class="contacts__content-text__title">Контакты</h1>
@@ -59,8 +59,8 @@ export default {
 </script>
 
 <style scoped lang="css">
-.my-5 {
-    margin: 4rem 0;
+.mt-5 {
+    margin-top: 4rem;
 }
 .contacts {
     height: calc(98vh - 5.625rem);
@@ -76,11 +76,12 @@ export default {
     margin: 0 auto;
 }
 .contacts__content-text {
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .contacts__content-text__title {
