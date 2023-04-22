@@ -8,17 +8,12 @@
                     </NuxtLink>
                 </li>
                 <li class="header-nav__list__item">
-                    <NuxtLink to="/" class="header-nav__list__item-link btn__cta">
-                        Консультация
-                    </NuxtLink>
-                </li>
-                <li class="header-nav__list__item">
-                    <NuxtLink to="/" class="header-nav__list__item-link">
+                    <NuxtLink to="/products/all" class="header-nav__list__item-link">
                         Каталоги
                     </NuxtLink>
                 </li>
                 <li class="header-nav__list__item">
-                    <NuxtLink to="/" class="header-nav__list__item-link">
+                    <NuxtLink :to="{ hash: '#contacts' }" class="header-nav__list__item-link">
                         Контакты
                     </NuxtLink>
                 </li>
@@ -29,10 +24,10 @@
                         Краснодар &dtrif;
                     </NuxtLink>
                     <ul class="dropdown">
-                        <li><NuxtLink to="#">Сочи</NuxtLink></li>
-                        <li><NuxtLink to="#">Ростов-на-Дону</NuxtLink></li>
-                        <li><NuxtLink to="#">Махачкала</NuxtLink></li>
-                        <li><NuxtLink to="#">Ставрополь</NuxtLink></li>
+                        <li><NuxtLink to="">Сочи</NuxtLink></li>
+                        <li><NuxtLink to="">Ростов-на-Дону</NuxtLink></li>
+                        <li><NuxtLink to="">Махачкала</NuxtLink></li>
+                        <li><NuxtLink to="">Ставрополь</NuxtLink></li>
                     </ul>
                 </li>
                 <li class="header-nav__list__right__item">
@@ -90,7 +85,7 @@ $lightgrey: #F8F8F8;
     margin-right: 3rem;
 }
 .header-nav__list__item-link {
-    font-size: 16px;
+    font-size: 18px;
     color: #000;
 }
 .header-nav__list__right {
