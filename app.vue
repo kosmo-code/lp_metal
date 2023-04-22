@@ -1,12 +1,8 @@
 <template>
   <div>
-    <the-header />
-    <the-hero />
-    <the-catalogs />
-    <the-contacts />
-    <the-footer />
+      <NuxtPage/>
+      <NuxtLayout />
   </div>
 </template>
-<script setup lang="ts">
-import TheFooter from "~/components/TheFooter.vue";
+<script setup>
 </script>

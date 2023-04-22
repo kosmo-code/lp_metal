@@ -1,18 +1,18 @@
 <template>
-    <div class="my-5">
-        <div class="wrapper">
-            <main>
-                <section class="main section">
+    <div class="products__wrapper">
+        <div class="wrapper ">
+            <section class="main__section">
+                <div class="wrapper">
                     <div class="main__row">
                         <div class="main__row__banner">
                             <img src="https://images.unsplash.com/photo-1515630771457-09367d0ae038?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                                  alt="img of metal fabric">
                         </div>
                         <div class="main__card one">
-                            <NuxtLink to="/">
+                            <NuxtLink to="">
                                 <img src="https://mb1.ru/upload/iblock/c13/d5tl9pv0oj6kci93krsafkg1czi35o6s.png" alt="" class="main__card-img">
                             </NuxtLink>
-                            <NuxtLink to="/">
+                            <NuxtLink to="">
                                 <h3 class="main__card-title">Сортовый прокат</h3>
                             </NuxtLink>
                             <div class="main__card__bottom">
@@ -21,10 +21,10 @@
                             </div>
                         </div>
                         <div class="main__card two">
-                            <NuxtLink to="/">
+                            <NuxtLink to="">
                                 <img src="https://mb1.ru/upload/iblock/c13/d5tl9pv0oj6kci93krsafkg1czi35o6s.png" alt="" class="main__card-img">
                             </NuxtLink>
-                            <NuxtLink to="/">
+                            <NuxtLink to="">
                                 <h3 class="main__card-title">Арматура</h3>
                             </NuxtLink>
                             <div class="main__card__bottom">
@@ -36,58 +36,52 @@
 
                     <!-- First variant of catalog -->
                     <div class="main__row-2">
-                        <NuxtLink to="/" class="main__card third">
+                        <NuxtLink to="" class="main__card third">
                             <h3 class="main__card-title">Сортовый прокат</h3>
                             <p class="main__card-description">Lorem ipsum dolor sit.</p>
                             <img class="main__card-img" src="https://mb1.ru/upload/iblock/c13/d5tl9pv0oj6kci93krsafkg1czi35o6s.png" alt="">
                         </NuxtLink>
-                        <NuxtLink to="/" class="main__card fourth">
+                        <NuxtLink to="" class="main__card fourth">
                             <h3 class="main__card-title">Сортовый прокат</h3>
                             <p class="main__card-description">Lorem ipsum dolor sit.</p>
                             <img class="main__card-img" src="https://mb1.ru/upload/iblock/c13/d5tl9pv0oj6kci93krsafkg1czi35o6s.png" alt="">
                         </NuxtLink>
-                        <NuxtLink to="/" class="main__card fifth">
+                        <NuxtLink to="" class="main__card fifth">
                             <h3 class="main__card-title">Сортовый прокат</h3>
                             <p class="main__card-description">Lorem ipsum dolor sit.</p>
                             <img class="main__card-img" src="https://mb1.ru/upload/iblock/c13/d5tl9pv0oj6kci93krsafkg1czi35o6s.png" alt="">
                         </NuxtLink>
                     </div>
 
-                    <div class="main__row-2">
-                        <NuxtLink to="/" class="main__card third">
-                            <h3 class="main__card-title">Сортовый прокат</h3>
-                            <p class="main__card-description">Lorem ipsum dolor sit.</p>
-                            <img class="main__card-img" src="https://mb1.ru/upload/iblock/c13/d5tl9pv0oj6kci93krsafkg1czi35o6s.png" alt="">
-                        </NuxtLink>
-                        <NuxtLink to="/" class="main__card fourth">
-                            <h3 class="main__card-title">Сортовый прокат</h3>
-                            <p class="main__card-description">Lorem ipsum dolor sit.</p>
-                            <img class="main__card-img" src="https://mb1.ru/upload/iblock/c13/d5tl9pv0oj6kci93krsafkg1czi35o6s.png" alt="">
-                        </NuxtLink>
-                        <NuxtLink to="/" class="main__card fifth">
-                            <h3 class="main__card-title">Сортовый прокат</h3>
-                            <p class="main__card-description">Lorem ipsum dolor sit.</p>
-                            <img class="main__card-img" src="https://mb1.ru/upload/iblock/c13/d5tl9pv0oj6kci93krsafkg1czi35o6s.png" alt="">
-                        </NuxtLink>
+                    <div class="el-center">
+                        <NuxtLink to="/products/all" class="btn__cta">Смотреть все разделы</NuxtLink>
                     </div>
-                </section>
-            </main>
+                </div>
+            </section>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: "TheCatalogs",
+    name: "TheProducts",
 }
 </script>
 
 <style scoped lang="css">
 @import "assets/styles/index.css";
 
-.my-5 {
-    margin: 4rem 0;
+.el-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.products__wrapper {
+    height: 100vh;
+    margin: 4rem 0 -2rem;
+}
+
 .main__row {
     display: grid;
     grid-template-columns: 3fr 1fr;

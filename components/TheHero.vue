@@ -26,8 +26,9 @@ export default {
   background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("@/assets/images/hero.jpg") no-repeat;
   background-size: cover;
   object-fit: cover;
-  height: calc(98vh - 5.625rem);
+  min-height: 100vh;
   overflow: hidden;
+  //margin-bottom: 4rem;
   &-content {
     padding-top: 4rem;
     display: flex;

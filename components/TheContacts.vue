@@ -1,8 +1,8 @@
 <template>
-    <div class="contacts mt-5" ref="">
+    <div class="contacts" ref="">
         <div class="contacts__content">
             <div class="contacts__content-text">
-                <h1 class="contacts__content-text__title">Контакты</h1>
+                <h1 class="contacts__content-text__title" id="contacts">Контакты</h1>
                 <p class="contacts__content-text__description">Свяжитесь с нами, наши менеджеры будут рады вам помочь.</p>
             </div>
             <div class="contacts__content-bottom">
@@ -59,9 +59,6 @@ export default {
 </script>
 
 <style scoped lang="css">
-.mt-5 {
-    margin-top: 4rem;
-}
 .contacts {
     height: calc(98vh - 5.625rem);
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url("assets/images/callCenter.jpg") no-repeat gray;
