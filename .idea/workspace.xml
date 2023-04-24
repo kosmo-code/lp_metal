@@ -4,20 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6497824b-1d87-40b6-9aa3-c1e01de1d9f5" name="Changes" comment="feat: add footer component and fixed header">
-      <change afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/products/all.vue" afterDir="false" />
+    <list default="true" id="6497824b-1d87-40b6-9aa3-c1e01de1d9f5" name="Changes" comment="feat: &#10;- add pages&#10;- anchor for contacts&#10;- add navigation &#10;- add default layout">
+      <change afterPath="$PROJECT_DIR$/assets/styles/burger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styles/dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/HeaderTest.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/hero.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TheCatalogs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/TheProducts.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TheContacts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/TheContacts.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TheFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/TheFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/reset.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/TheHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/TheHeader.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/TheHero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/TheHero.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Vue Single File Component" />
+        <option value="CSS File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -55,8 +56,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "page-catalogs",
+    "git-widget-placeholder": "header-adaptive",
     "last_opened_file_path": "C:/Users/Tigran/Desktop/myCatalog/lp_metal/assets/images",
+    "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -88,7 +90,8 @@
       <updated>1681892929775</updated>
       <workItem from="1681892931213" duration="4799000" />
       <workItem from="1681997042593" duration="3171000" />
-      <workItem from="1682097336832" duration="11471000" />
+      <workItem from="1682237795752" duration="5003000" />
+      <workItem from="1682266333365" duration="31551000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add catalogs section">
       <created>1681927313918</created>
@@ -114,7 +117,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="page-catalogs" />
+                        <option value="footer" />
                       </list>
                     </value>
                   </entry>

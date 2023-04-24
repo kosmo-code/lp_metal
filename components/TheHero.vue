@@ -1,10 +1,10 @@
 <template>
   <div class="hero">
-      <div class="hero-content">
-          <h1 class="hero-content__title">Крупнейший металлмаркет России</h1>
-          <p class="hero-content__description">Металлопрокат, трубы, лист...</p>
-      </div>
-      <button class="hero__btn btn__cta">Оставить заявку</button>
+        <div class="hero-content">
+            <h1 class="hero-content__title">Крупнейший металлмаркет России</h1>
+            <p class="hero-content__description">Металлопрокат, трубы, лист...</p>
+        </div>
+        <button class="hero__btn btn__cta">Оставить заявку</button>
   </div>
 </template>
 
@@ -18,23 +18,21 @@ export default {
 @import "assets/styles/index";
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
   color: #FFFFFF;
-  background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("@/assets/images/hero.jpg") no-repeat;
-  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("assets/images/hero.jpg") center center no-repeat;
+  background-size: 100vw;
   object-fit: cover;
   min-height: 100vh;
   overflow: hidden;
-  //margin-bottom: 4rem;
+  width: 100vw;
+  min-width: 100vw;
+  padding: 0 1.7rem;
   &-content {
-    padding-top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 4rem;
     line-height: 1.5;
     &__title {
       font-size: 3.5rem;
