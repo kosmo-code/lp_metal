@@ -50,7 +50,7 @@
   align-items: center;
   justify-content: space-around;
   color: #FFFFFF;
-  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("@/assets/images/hero.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("assets/images/hero.jpg") no-repeat;
   background-size: cover;
   object-fit: cover;
   height: calc(98vh - 5.625rem);
@@ -79,33 +79,6 @@
   text-transform: uppercase;
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  background: transparent;
-}
-
-.wrapper {
-  max-width: 1170px;
-  margin: auto;
-  padding: 0 15px;
-}
-
-.btn__cta {
-  opacity: 1;
-  font-size: 1.5rem;
-  background: red;
-  padding: 0.5rem 1rem;
-  color: #FFFFFF;
-  cursor: pointer;
-}
-.btn__cta:hover, .btn__cta:focus {
-  opacity: 0.85;
-  text-decoration: underline;
-  transition: all 0.5s ease-in-out;
-}
-
 .dropdown {
   display: none;
   position: absolute;
@@ -113,7 +86,7 @@ body {
   padding-top: 10px;
 }
 
-.header-nav__list__right__item:hover .dropdown {
+.header-menu__contacts__list:hover .dropdown {
   display: block;
   cursor: pointer;
   background: #FFFFFF;
@@ -136,6 +109,88 @@ body {
   padding-left: 10px;
   border-left: 2px solid red;
   transition: all 0.3s ease;
+}
+
+.burger-menu, label:before, label:after {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background: red;
+  width: 30px;
+  height: 5px;
+  transition: 0.2s ease;
+  cursor: pointer;
+  z-index: 1;
+}
+
+label:before {
+  content: " ";
+  top: 10px;
+  left: 0;
+}
+
+label:after {
+  content: " ";
+  top: 20px;
+  left: 0;
+}
+
+#menu-toggle:checked + label {
+  top: 35px;
+  transform: rotate(180deg);
+  transition: transform 0.2s ease;
+}
+
+#menu-toggle:checked + label:before {
+  width: 20px;
+  top: -2px;
+  left: 18px;
+  transform: rotate(45deg) translateX(-5px);
+  transition: transform 0.2s ease;
+}
+
+#menu-toggle:checked + label:after {
+  width: 20px;
+  top: 2px;
+  left: 18px;
+  transform: rotate(-45deg) translateX(-5px);
+  transition: transform 0.2s ease;
+}
+
+[type=checkbox]:not(:checked), [type=checkbox]:checked {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .burger-menu, label:before, label:after {
+    display: block;
+  }
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background: transparent;
+}
+
+.wrapper {
+  max-width: 1220px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.btn__cta {
+  opacity: 1;
+  font-size: 1.5rem;
+  background: red;
+  padding: 0.5rem 1rem;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.btn__cta:hover, .btn__cta:focus {
+  opacity: 0.85;
+  text-decoration: underline;
+  transition: all 0.5s ease-in-out;
 }
 
 /*# sourceMappingURL=index.css.map */

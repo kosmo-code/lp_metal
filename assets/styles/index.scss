@@ -7,6 +7,8 @@
 // Подключение стилей для отдельных компонентов
 @import "header";
 @import "hero";
+@import "dropdown";
+@import "burger";
 
 // Переменные
 $white: #FFF;
@@ -21,9 +23,9 @@ body {
 }
 
 .wrapper {
-  max-width: 1170px;
+  max-width: 1220px;
   margin: auto;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .btn__cta {
@@ -39,33 +41,4 @@ body {
     text-decoration: underline;
     transition: all .5s ease-in-out;
   }
-}
-
-.dropdown {
-  display: none;
-  position: absolute;
-  z-index: 10;
-  padding-top: 10px;
-}
-.header-nav__list__right__item:hover .dropdown {
-  display: block;
-  cursor: pointer;
-  background: #FFFFFF;
-  min-width: 250px;
-  margin-right: 250px;
-  padding-left: 10px;
-  text-align: left;
-  box-shadow: 0 3px 5px -1px #ccc;
-}
-.dropdown li {
-  padding: 10px 0;
-}
-
-.dropdown li a {
-  transition: all 0.5s ease;
-}
-.dropdown li a:hover {
-  padding-left: 10px;
-  border-left: 2px solid red;
-  transition: all 0.3s ease;
 }
