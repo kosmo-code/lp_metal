@@ -84,6 +84,8 @@ $lightgrey: #F8F8F8;
     background-color: #fff;
     border-bottom: 1px solid #eaecef;
     width: 100vw;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .header-nav {
@@ -97,6 +99,11 @@ $lightgrey: #F8F8F8;
     display: flex;
     gap: 1.2rem;
     align-items: flex-start;
+    &__item:hover,
+    &__link:hover {
+        color: red;
+        transition: color .5s ease;
+    }
 }
 
 .logo {
