@@ -6,9 +6,11 @@
 
 // Подключение стилей для отдельных компонентов
 @import "header";
+@import "footer";
 @import "hero";
 @import "dropdown";
 @import "burger";
+
 
 // Переменные
 $white: #FFF;
@@ -16,8 +18,7 @@ $lightgrey: #F8F8F8;
 
 // Общие стили
 body,
-html,
-{
+html {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   background: #F8F8F8;
@@ -37,9 +38,13 @@ html,
   padding: 0.5rem 1rem;
   color: #FFFFFF;
   cursor: pointer;
+  outline: none;
+  border: none;
   &:hover,
   &:focus {
-    opacity: 0.85;
+    outline: none;
+    border: none;
+    opacity: 0.1;
     text-decoration: underline;
     transition: all .5s ease-in-out;
   }

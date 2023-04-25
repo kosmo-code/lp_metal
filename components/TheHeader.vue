@@ -74,7 +74,7 @@ export default {
 $lightgrey: #F8F8F8;
 
 .header {
-    max-height: 5rem;
+    height: 5rem;
     padding: 0 2rem;
     position: fixed;
     z-index: 20;
