@@ -51,4 +51,11 @@ export default {
     text-transform: uppercase;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .hero-content__title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
 </style>

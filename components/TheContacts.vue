@@ -1,5 +1,5 @@
 <template>
-    <div class="contacts" ref="">
+    <div class="contacts">
         <div class="contacts__content">
             <div class="contacts__content-text">
                 <h1 class="contacts__content-text__title" id="contacts">Контакты</h1>
@@ -18,17 +18,18 @@
                         <label class="feedback__label" for="phone">Номер телефона: </label>
                         <input class="feedback__input" type="tel" id="phone" name="phone" required placeholder="Введите ваш номер телефона">
 
-                        <button type="submit" class="my-5 _btn__cta">Отправить заявку</button>
+                        <button type="submit" class="btn__cta-contacts">Отправить заявку</button>
                     </form>
                 </div>
                 <div class="contacts__content-bottom-right">
                     <div class="contacts__content-bottom__title">Контактная информация</div>
                     <span class="contacts__content-bottom-right__title">АДРЕС</span>
-                    <p class="contacts__content-bottom-right__description">196240, Ростов-на-Дону, 6-ой Предпортовый проезд, 12</p>
+                    <p class="contacts__content-bottom-right__description address">196240, Ростов-на-Дону, <br>6-ой Предпортовый проезд, 12</p>
                     <span class="contacts__content-bottom-right__title">ТЕЛЕФОНЫ</span>
-                    <p class="contacts__content-bottom-right__description">8 (812) 222-33-22</p>
+                    <p class="contacts__content-bottom-right__description tel">8 (812) 222-33-22</p>
                     <span class="contacts__content-bottom-right__title">ЭЛЕКТРОННАЯ ПОЧТА</span>
-                    <p class="contacts__content-bottom-right__description">contact@mc.ru</p>
+                    <p class="contacts__content-bottom-right__description email">contact@mc.ru</p>
+                    <button class="feedback__btn">Оставить заявку</button>
                 </div>
             </div>
         </div>
@@ -38,29 +39,13 @@
 <script>
 export default {
     name: "TheContacts",
-    setup() {
-        // const parallaxContainer = ref(null);
-        //
-        // const handleScroll = () => {
-        //     const offset = window.pageYOffset;
-        //     parallaxContainer.value.style.backgroundPositionY = offset * 0.7 + 'px';
-        // };
-        //
-        // onMounted(() => {
-        //     window.addEventListener('scroll', handleScroll);
-        // });
-        //
-        // return {
-        //     parallaxContainer,
-        //     handleScroll
-        // };
-    }
 }
 </script>
 
 <style scoped lang="css">
+
 .contacts {
-    height: calc(98vh - 5.625rem);
+    min-height: calc(100vh - 9.5rem);
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url("assets/images/callCenter.jpg") no-repeat gray;
     background-size: cover;
     object-fit: cover;
@@ -82,11 +67,13 @@ export default {
 }
 
 .contacts__content-text__title {
-    font-size: 3.375rem;
+    font-size: 3.5rem;
     line-height: 1.5;
 }
 .contacts__content-text__description {
     font-size: 1.2rem;
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
 }
 .contacts__content-bottom {
     display: flex;
@@ -96,10 +83,13 @@ export default {
 .contacts__content-bottom__title {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 1.2rem;
+    margin-bottom: 2rem;
 }
+
+
 .feedback {
     background-color: transparent;
+    opacity: 95%;
     max-width: 600px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     border-radius: 5px;
@@ -112,25 +102,47 @@ export default {
 }
 
 .feedback__input, textarea {
-    background-color: transparent;
+    background-color: white;
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     margin-bottom: 20px;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: #000000;
+    border: 1px solid transparent;
+}
+.feedback__input:focus,
+textarea:focus {
+    padding-top: 20px;
+    transition: all .5s;
+    border: 2px solid red;
+    outline: red;
 }
 
-._btn__cta {
+.feedback__btn {
+    min-width: 10rem;
+    display: none;
+    padding: 0.5rem 1rem;
+    margin: 2rem auto;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background: red;
+    color: #FFFFFF;
+    &:hover {
+        text-decoration: underline;
+        transition: all 1s ease-out;
+    }
+}
+
+.btn__cta-contacts {
+    margin: 2rem 0;
     opacity: 1;
     font-size: 1.5rem;
     background: red;
     padding: 0.5rem 1rem;
     color: #FFFFFF;
-    text-decoration: none;
     &:hover,
     &:focus {
         opacity: 0.85;
@@ -155,31 +167,58 @@ input[type="submit"] {
 }
 
 .contacts__content-bottom-right {
-
+    padding: 0 2rem;
+    margin: 0 4rem;
 }
+
 .contacts__content-bottom-right__title {
     font-size: 14px;
     font-weight: 700;
-    letter-spacing: 1.25px;
     color: #868686;
 }
 .contacts__content-bottom-right__description {
+    font-size: 1.2rem;
     line-height: 1.5;
 }
 
-.parallax-container {
-    height: calc(98vh - 5.625rem);
-    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url("assets/images/callCenter.jpg") no-repeat gray;
-    background-size: cover;
-    object-fit: cover;
-    overflow: hidden;
-}
-
-.parallax-content {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: #fff;
+@media screen and (max-width: 756px) {
+    .contacts__content-bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .contacts__content-bottom-right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0 1rem;
+        align-items: center;
+    }
+    .contacts__content-bottom__title {
+        grid-column-start: span 3;
+    }
+    .contacts__content-bottom-right__title {
+        grid-row-start: span 1;
+        grid-column-start: span 1;
+    }
+    .contacts__content-bottom-right__description.address {
+        grid-row-start: span 1;
+        grid-column-start: span 2;
+    }
+    .contacts__content-bottom-right__description.tel {
+        grid-row-start: span 1;
+        grid-column-start: span 2;
+    }
+    .contacts__content-bottom-right__description.email {
+        grid-row-start: span 1;
+        grid-column-start: span 2;
+    }
+    .contacts__content-bottom-left {
+        display: none;
+    }
+    .feedback__btn {
+        display: block;
+    }
 }
 </style>

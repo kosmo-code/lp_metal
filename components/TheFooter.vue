@@ -26,17 +26,6 @@ export default {
 }
 </script>
 
-<style scoped>
-@import "assets/styles/index.css";
-.footer {
-  max-height: 90px;
-  height: 100%;
-  background: #F8F8F8;
-  padding: 20px 0;
-}
-.footer__menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+<style scoped lang="scss">
+@import "assets/styles/index";
 </style>
