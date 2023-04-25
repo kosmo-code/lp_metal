@@ -15,11 +15,13 @@ $white: #FFF;
 $lightgrey: #F8F8F8;
 
 // Общие стили
-body {
+body,
+html,
+{
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
   font-weight: 400;
-  background: transparent;
+  background: #F8F8F8;
+  font-size: 16px;
 }
 
 .wrapper {
