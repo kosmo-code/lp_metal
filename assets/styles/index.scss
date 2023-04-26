@@ -11,6 +11,9 @@
 @import "dropdown";
 @import "burger";
 
+// Подключение плагина
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
 
 // Переменные
 $white: #FFF;
@@ -27,12 +30,11 @@ html {
 
 .wrapper {
   max-width: 1220px;
-  margin: auto;
+  margin: 0 auto;
   padding: 0 10px;
 }
 
 .btn__cta {
-  opacity: 1;
   font-size: 1.5rem;
   background: red;
   padding: 0.5rem 1rem;
@@ -44,7 +46,6 @@ html {
   &:focus {
     outline: none;
     border: none;
-    opacity: 0.1;
     text-decoration: underline;
     transition: all .5s ease-in-out;
   }

@@ -1,67 +1,165 @@
 <template>
-  <div>
-      <div class="products__wrapper">
-          <div class="wrapper ">
-              <section class="main__section">
-                  <div class="wrapper">
-                      <div class="main__row">
-                          <div class="main__row__banner">
-                              <img src="https://images.unsplash.com/photo-1515630771457-09367d0ae038?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                   alt="img of metal fabric">
-                          </div>
-                          <div class="main__card one">
-                              <NuxtLink to="">
-                                  <img src="https://mb1.ru/upload/iblock/c13/d5tl9pv0oj6kci93krsafkg1czi35o6s.png" alt="" class="main__card-img">
-                              </NuxtLink>
-                              <NuxtLink to="">
-                                  <h3 class="main__card-title">Сортовый прокат</h3>
-                              </NuxtLink>
-                              <div class="main__card__bottom">
-                                  <button class="main__card__bottom-btn">+4 категории</button>
-                                  <span class="main__card__bottom-price">от 53.00 руб./м</span>
-                              </div>
-                          </div>
-                          <div class="main__card two">
-                              <NuxtLink to="">
-                                  <img src="https://mb1.ru/upload/iblock/c13/d5tl9pv0oj6kci93krsafkg1czi35o6s.png" alt="" class="main__card-img">
-                              </NuxtLink>
-                              <NuxtLink to="">
-                                  <h3 class="main__card-title">Арматура</h3>
-                              </NuxtLink>
-                              <div class="main__card__bottom">
-                                  <button class="main__card__bottom-btn">+4 категории</button>
-                                  <span class="main__card__bottom-price">от 53.00 руб./м</span>
-                              </div>
-                          </div>
-                      </div>
+    <div>
+        <section class="products-all">
+            <div class="wrapper">
+                <div>
+                    <div>Каталог товаров</div>
+                    <div id="search" :class="{ 'search__loading': searchLoading }">
+                        <input class="search__input" type="text" id="input" placeholder="Поиск..." @keyup.enter="toggleSearchLoading" />
+                        <button class="search__btn" id="button" @click="toggleSearchLoading">
+                            <img src="/search.svg" alt="Search svg-icon">
+                        </button>
+                        <div class="search__spinner">
+                            <img src="/loader.svg" alt="Loader svg-icon">
+                        </div>
+                    </div>
+                    <div style="color: red">Фильтр по параметру</div>
+                    <div class="inner__wrapper">
+                        <h2 class="category__title">Каталог "Металлопрокат"</h2>
+                        <div class="category__wrapper">
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Арматура</h2>
+                                <button>Подробнее</button>
+                            </NuxtLink>
 
-                      <!-- First variant of catalog -->
-                      <div class="main__row-2">
-                          <NuxtLink to="" class="main__card third">
-                              <h3 class="main__card-title">Сортовый прокат</h3>
-                              <p class="main__card-description">Lorem ipsum dolor sit.</p>
-                              <img class="main__card-img" src="https://mb1.ru/upload/iblock/c13/d5tl9pv0oj6kci93krsafkg1czi35o6s.png" alt="">
-                          </NuxtLink>
-                          <NuxtLink to="" class="main__card fourth">
-                              <h3 class="main__card-title">Сортовый прокат</h3>
-                              <p class="main__card-description">Lorem ipsum dolor sit.</p>
-                              <img class="main__card-img" src="https://mb1.ru/upload/iblock/c13/d5tl9pv0oj6kci93krsafkg1czi35o6s.png" alt="">
-                          </NuxtLink>
-                          <NuxtLink to="" class="main__card fifth">
-                              <h3 class="main__card-title">Сортовый прокат</h3>
-                              <p class="main__card-description">Lorem ipsum dolor sit.</p>
-                              <img class="main__card-img" src="https://mb1.ru/upload/iblock/c13/d5tl9pv0oj6kci93krsafkg1czi35o6s.png" alt="">
-                          </NuxtLink>
-                      </div>
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Круг</h2>
+                                <button>Подробнее</button>
+                            </NuxtLink>
 
-                      <div class="el-center">
-                          <NuxtLink to="/products/all" class="btn__cta">Смотреть все разделы</NuxtLink>
-                      </div>
-                  </div>
-              </section>
-          </div>
-      </div>
-  </div>
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Пруток</h2>
+                                <button>Подробнее</button>
+                            </NuxtLink>
+
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Балка двутавровая</h2>
+                                <button>Подробнее</button>
+                            </NuxtLink>
+
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Катанка</h2>
+                                <button>Подробнее</button>
+                            </NuxtLink>
+
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Квадрат</h2>
+                                <button>Подробнее</button>
+                            </NuxtLink>
+
+
+
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Лента</h2>
+                                <button>Подробнее</button>
+                            </NuxtLink>
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Лист</h2>
+                                <button>Подробнее</button>
+                            </NuxtLink>
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Поковка</h2>
+                                <button>Подробнее</button>
+                            </NuxtLink>
+
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Поковка</h2>
+                                <button>Подробнее</button>
+                            </NuxtLink>
+
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Полоса</h2>
+                                <button>Подробнее</button>
+                            </NuxtLink>
+
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Проволока</h2>
+                                <button>Подробнее</button>
+                            </NuxtLink>
+
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Рельс</h2>
+                                <button>Подробнее</button>
+                            </NuxtLink>
+
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Сетка</h2>
+                                <button>Подробнее</button>
+                            </NuxtLink>
+
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Сетка</h2>
+                                <button>Подробнее</button>
+                            </NuxtLink>
+
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Труба</h2>
+                                <button>Подробнее</button>
+                            </NuxtLink>
+
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Уголок металлический</h2>
+                                <button>Подробнее</button>
+                            </NuxtLink>
+
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Уголок металлический</h2>
+                                <button>Подробнее</button>
+                            </NuxtLink>
+
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Швеллер металлический</h2>
+                                <button>Подробнее</button>
+                            </NuxtLink>
+
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Штрипс</h2>
+                                <button class="btn__cta">Подробнее</button>
+                            </NuxtLink>
+
+                            <NuxtLink to="" class="card">
+                                <img src="https://via.placeholder.com/150" alt="Product Image">
+                                <h2>Шестигранник</h2>
+                                <button class="btn__cta">Подробнее</button>
+                            </NuxtLink>
+                        </div>
+                    </div>
+<!--                    <div class="category__wrapper">-->
+<!--                        <h2 class="category__title">Каталог "Металлопрокат"</h2>-->
+<!--                        <div class="category__content">-->
+<!--                            <div class="category__content">-->
+<!--                                <NuxtLink to="/">-->
+<!--                                    <img class="products-all__content__card-img" src="https://mb1.ru/upload/iblock/c13/d5tl9pv0oj6kci93krsafkg1czi35o6s.png" alt="Photo of category">-->
+<!--                                    <h3 class="products-all__content__card-title">Мателлопрокат</h3>-->
+<!--                                    <button class="btn__cta">перейти</button>-->
+<!--                                </NuxtLink>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
+            </div>
+        </section>
+    </div>
 </template>
 
 <script>
@@ -69,92 +167,147 @@ import Default from "~/layouts/default.vue";
 
 export default {
     name: "all",
-    components: {Default}
+    components: {Default},
+    setup() {
+        const searchLoading = ref(true);
+
+        const toggleSearchLoading = () => {
+            searchLoading.value = false;
+
+            setTimeout(() => {
+                searchLoading.value = true;
+            }, 1500);
+
+            searchLoading.value = false;
+        };
+
+        return {
+            searchLoading,
+            toggleSearchLoading,
+        };
+    },
 }
 </script>
 
-<style scoped lang="css">
-@import "assets/styles/index.css";
+<style scoped lang="scss">
+@import "assets/styles/index";
 
-.el-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.products__wrapper {
-    height: 100vh;
-    margin: 8rem 0 -2rem;
-}
-
-.main__row {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-column-gap: 2.5rem;
-    grid-row-gap: 2.5rem;
-    grid-template-areas: "banner card" "banner card2";
-    margin-bottom: 2.5rem;
-}
-
-.main__row__banner {
-    grid-area: banner;
-}
-
-.main__row__banner img {
+.card {
+    border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.main__card {
-    min-width: 300px;
-    width: 100%;
-    min-height: 215px;
+    padding: 2rem 0;
+    width: 15rem;
     height: 100%;
-    background-color: #E8E9EB;
-    padding: 25px 30px;
+    margin: 1rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.card img {
+    width: 40%;
     border-radius: 5px;
-    position: relative;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
 }
 
-.main__card.one {
-    grid-area: card;
+.card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.8rem;
 }
 
-.main__card.two {
-    grid-area: card2;
+.card button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: .8rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    align-items: self-start;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.main__row-2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 2.5rem;
-    grid-row-gap: 2.5rem;
-    grid-template-areas: "card3 card4 card5";
+
+
+
+
+
+.products-all {
+    padding: 6rem 1rem 1rem;
     margin: 2.5rem 0;
 }
 
-.main__card.third {
-    grid-area: card3;
+.inner__wrapper {
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 2.5rem;
 }
 
-.main__card.fourth {
-    grid-area: card4;
+.category__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.main__card.fifth {
-    grid-area: card5;
+#search {
+  align-items: center;;
+  background: #F8F8F8;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 0;
+  padding: 0.5em 0.5em 0.5em 1em;
+  width: 500px;
+  transition: all 0.5s;
+  &__btn,
+  &__input {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    outline: 0;
+  }
+  &__btn {
+    cursor: pointer;
+    padding: 0 0.25em;
+  }
+  &__input {
+    flex: 1;
+    &::placeholder {
+      color: black;
+    }
+  }
+}
+.search__spinner {
+  animation: spinner 1s infinite linear;
+  display: none;
+  padding: 0 0.25em;
 }
 
-.main__card-img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 10rem;
-    height: 8rem;
-    padding: 0.5rem;
-    object-fit: cover;
+#search.loading {
+  .search__btn {
+    display: none;
+  }
 }
+#search.loading {
+  .search__spinner {
+    display: block;
+  }
+}
+
+// Animation
+
+@keyframes search__spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 </style>

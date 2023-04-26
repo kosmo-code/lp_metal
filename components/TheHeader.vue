@@ -13,7 +13,7 @@
                         </NuxtLink>
                     </li>
                     <li class="header-menu__item">
-                        <NuxtLink to="/products/all" class="header-menu__link">
+                        <NuxtLink to="/" class="header-menu__link">
                             Главная
                         </NuxtLink>
                     </li>
