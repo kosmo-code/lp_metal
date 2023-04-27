@@ -14,5 +14,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "assets/styles/index.scss";
+@import "assets/styles/index";
 </style>
