@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6497824b-1d87-40b6-9aa3-c1e01de1d9f5" name="Changes" comment="feat: add all-page and some positions">
-      <change afterPath="$PROJECT_DIR$/public/left-arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/right-arrow.svg" afterDir="false" />
+    <list default="true" id="6497824b-1d87-40b6-9aa3-c1e01de1d9f5" name="Changes" comment="fix: contacts section and add adaptive for medium and large screens">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/products/all.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products/all.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SCSS File" />
+        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
       </list>
     </option>
@@ -49,8 +46,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "all-categories",
-    "last_opened_file_path": "C:/Users/Tigran/Desktop/myCatalog/lp_metal/public",
+    "git-widget-placeholder": "card-width",
+    "last_opened_file_path": "C:/Users/Tigran/Desktop/myCatalog/lp_metal/assets/images",
     "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -63,13 +60,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\public" />
       <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\assets\images" />
       <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\assets" />
       <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal" />
       <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\public\images" />
+      <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\pages" />
+      <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\public" />
       <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\assets" />
     </key>
   </component>
@@ -84,7 +83,8 @@
       <workItem from="1681892931213" duration="4799000" />
       <workItem from="1681997042593" duration="3171000" />
       <workItem from="1682097336832" duration="11471000" />
-      <workItem from="1682573955616" duration="20126000" />
+      <workItem from="1682487716105" duration="8000" />
+      <workItem from="1682491655399" duration="17515000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add catalogs section">
       <created>1681927313918</created>
@@ -110,7 +110,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="page-catalogs" />
+                        <option value="all-page" />
                       </list>
                     </value>
                   </entry>
