@@ -569,7 +569,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
-    gap: .1rem 3.5rem;
+    gap: .1rem .25rem;
     position: relative;
 }
 .category-list-item {
@@ -628,8 +628,8 @@ export default {
 .card {
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 2rem 1rem 3rem;
-    width: 100%;
+    padding: 2rem 1.5rem 3rem;
+    width: 300px;
     height: 13rem;
     margin: .8rem 0;
     display: inline-block;
@@ -652,7 +652,7 @@ export default {
 }
 
 .card h2 {
-    font-size: 1.56rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin: .5rem 0 1.5rem;
 }
