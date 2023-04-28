@@ -107,7 +107,7 @@
                                 v-for="(moreItem, idx) in moreList"
                             >
                                 <img :src="moreItem.img" :alt="moreItem.title">
-                                <h2>Лист {{ moreItem.title }}</h2>
+                                <h2>{{ moreItem.title }}</h2>
                                 <NuxtLink to="" class="btn__cta">Подробнее</NuxtLink>
                             </li>
                         </ul>
@@ -578,17 +578,6 @@ export default {
 <style scoped lang="scss">
 @import "assets/styles/index";
 
-.category-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    gap: .1rem .25rem;
-    position: relative;
-}
-.category-list-item {
-
-}
-
 .arrow {
     top: 50%;
     transform: translateY(-50%);
@@ -613,22 +602,7 @@ export default {
     }
 }
 
-.inner__wrapper {
-    //min-height: 100vh;
-    width: 100%;
-    margin-top: 2.5rem;
-}
 
-.category__wrapper,
-.carousel {
-    white-space: nowrap;
-}
-
-.category__wrapper {
-    max-width: 68.75rem;
-    width: 100%;
-    position: relative;
-}
 
 .carousel {
     display: grid;
@@ -636,88 +610,6 @@ export default {
     grid-auto-columns: calc((100% / 4) - .75rem);
     gap: 1rem;
     overflow: hidden;
-}
-
-.card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 2rem 1.5rem 3rem;
-    width: 300px;
-    height: 13rem;
-    margin: .8rem 0;
-    display: inline-block;
-    text-align: center;
-    background-position: 100% 100%;
-}
-.card:first-child {
-    margin-left: 0;
-}
-.card:last-child {
-    margin-right: 0;
-}
-
-.card img {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    object-fit: cover;
-}
-
-.card h2 {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin: .5rem 0 1.5rem;
-}
-
-.btn__show-more {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: .8rem 1rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    align-items: self-start;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 15%;
-    right: 0;
-    position: absolute;
-}
-
-.card button {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: .8rem 1rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    align-items: self-start;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.category__title {
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 1.25;
-    letter-spacing: 1.25px;
-}
-
-.products-all {
-    padding: 6rem 1rem 1rem;
-    margin: 2.5rem 0;
-}
-
-.products-all__title {
-    font-weight: 700;
-    font-size: 2.75rem;
-    line-height: 1.5;
-    letter-spacing: 1.25px;
 }
 
 </style>

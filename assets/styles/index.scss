@@ -6,8 +6,14 @@
 
 // Подключение стилей для отдельных компонентов
 @import "header";
-@import "footer";
 @import "hero";
+@import "products";
+@import "contacts";
+@import "footer";
+
+@import "all";
+@import "armatures";
+
 @import "dropdown";
 @import "burger";
 @import "search";
