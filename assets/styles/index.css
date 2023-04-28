@@ -82,18 +82,20 @@
   background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("assets/images/hero.jpg") center center no-repeat;
   background-size: 100vw;
   object-fit: cover;
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
   width: 100vw;
-  min-width: 100vw;
-  padding: 0 1.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 .hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 4rem;
+  padding-top: 14rem;
   line-height: 1.5;
 }
 .hero-content__title {
@@ -110,6 +112,7 @@
 .hero__btn {
   font-size: 1.5rem;
   text-transform: uppercase;
+  margin-bottom: 10rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -544,7 +547,7 @@ input[type=submit] {
   border-radius: 8px;
   padding: 2rem 1.5rem 3rem;
   width: 250px;
-  height: 13rem;
+  height: 14rem;
   margin: 1rem 0;
   display: inline-block;
   text-align: center;

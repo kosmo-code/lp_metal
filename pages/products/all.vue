@@ -57,7 +57,7 @@
                             >
                                 <img :src="tubeItem.img" :alt="tubeItem.title">
                                 <h2>Труба {{ tubeItem.title }}</h2>
-                                <NuxtLink to="" class="btn__cta">Подробнее</NuxtLink>
+                                <NuxtLink :to="tubeItem.to" class="btn__cta">Подробнее</NuxtLink>
                             </li>
                         </ul>
                     </div>
@@ -137,7 +137,6 @@ export default {
             searchLoading.value = false;
         };
 
-        // Slider-carousel
         const rolledMetalList = ref([
             {
                 id: 1,
@@ -253,8 +252,41 @@ export default {
             {
                 id: 1,
                 img: "https://via.placeholder.com/150",
+                title: 'круглая',
+                to: '/products/truba/kruglaya',
+            },
+            {
+                id: 2,
+                img: "https://via.placeholder.com/150",
+                title: 'профильная',
+                to: '/products/truba/profilnaya',
+            },
+            {
+                id: 1,
+                img: "https://via.placeholder.com/150",
+                title: 'квадратная',
+                to: '/products/truba/square',
+            },
+            {
+                id: 1,
+                img: "https://via.placeholder.com/150",
+                title: 'прямоугольная',
+                to: '/products/truba/rectangle',
+            },
+            {
+                id: 1,
+                img: "https://via.placeholder.com/150",
+                title: 'гофрированная',
+                to: '/products/truba/gofrirovannaya',
+            },
+        ]);
+
+        const tubeList2 = ref([
+            {
+                id: 1,
+                img: "https://via.placeholder.com/150",
                 title: 'алюминиевая',
-                to: '/products/ribbon',
+                to: '/products/truba/aluminiy',
             },
             {
                 id: 2,
@@ -601,9 +633,6 @@ export default {
         right: -22px;
     }
 }
-
-
-
 .carousel {
     display: grid;
     grid-auto-flow: column;
@@ -611,5 +640,4 @@ export default {
     gap: 1rem;
     overflow: hidden;
 }
-
 </style>

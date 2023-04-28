@@ -19,7 +19,7 @@
                         :key="idx"
                     >
                         <img :src="item.img" :alt="item.title" class="products-armatures__item__img">
-                        <div class="products-armatures__item__title">{{ item.title }}</div>
+                        <div class="products-armatures__item__title">Арматура {{ item.title }}</div>
                         <!-- modal-popup -->
                         <NuxtLink class="products-armatures__link">Посмотреть</NuxtLink>
                     </li>
@@ -41,85 +41,85 @@ export default {
             {
                 id: 1,
                 img: "https://via.placeholder.com/150",
-                title: 'Арматура металлическая',
+                title: 'металлическая',
                 to: '/products/armatures/'
             },
             {
                 id: 2,
                 img: "https://via.placeholder.com/150",
-                title: 'Арматура композитная',
+                title: 'композитная',
                 to: '/products/armatures'
             },
             {
                 id: 3,
                 img: "https://via.placeholder.com/150",
-                title: 'Арматура стеклопластиковая',
+                title: 'стеклопластиковая',
                 to: '/products/armatures'
             },
             {
                 id: 4,
                 img: "https://via.placeholder.com/150",
-                title: 'Арматура базальтопластиковая',
+                title: 'базальтопластиковая',
                 to: '/products/armatures'
             },
             {
                 id: 5,
                 img: "https://via.placeholder.com/150",
-                title: 'Арматура 6 мм',
+                title: '6 мм',
                 to: '/products/armatures'
             },
             {
                 id: 6,
                 img: "https://via.placeholder.com/150",
-                title: 'Арматура 8 мм',
+                title: '8 мм',
                 to: '/products/armatures'
             },
             {
                 id: 7,
                 img: "https://via.placeholder.com/150",
-                title: 'Арматура 10 мм',
+                title: '10 мм',
                 to: '/products/armatures'
             },
             {
                 id: 8,
                 img: "https://via.placeholder.com/150",
-                title: 'Арматура 12 мм',
+                title: '12 мм',
                 to: '/products/armatures'
             },
             {
                 id: 9,
                 img: "https://via.placeholder.com/150",
-                title: 'Арматура 14 мм',
+                title: '14 мм',
                 to: '/products/armatures'
             },
             {
                 id: 10,
                 img: "https://via.placeholder.com/150",
-                title: 'Арматура 16 мм',
+                title: '16 мм',
                 to: '/products/armatures'
             },
             {
                 id: 11,
                 img: "https://via.placeholder.com/150",
-                title: 'Арматура 20 мм',
+                title: '20 мм',
                 to: '/products/armatures'
             },
             {
                 id: 12,
                 img: "https://via.placeholder.com/150",
-                title: 'Арматура А240 (АI, А1)',
+                title: 'А240 (АI, А1)',
                 to: '/products/armatures'
             },
             {
                 id: 13,
                 img: "https://via.placeholder.com/150",
-                title: 'Арматура А400 (АIII, А3)',
+                title: 'А400 (АIII, А3)',
                 to: '/products/armatures'
             },
             {
                 id: 14,
                 img: "https://via.placeholder.com/150",
-                title: 'Арматура А500С',
+                title: 'А500С',
                 to: '/products/armatures'
             },
         ]);
