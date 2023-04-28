@@ -45,15 +45,20 @@
 }
 
 .footer {
-  margin-top: 2rem;
-  height: 100%;
+  margin-top: 2.5rem;
+  height: 90px;
   background: #F8F8F8;
-  padding: 20px 0;
+  position: relative;
 }
 .footer__menu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.footer__menu li:not(:last-child) {
+  margin-right: 20rem;
 }
 
 .hero {
@@ -179,6 +184,58 @@ label:after {
     display: block;
   }
 }
+#search {
+  align-items: center;
+  background: #F8F8F8;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 0;
+  padding: 0.5em 0.5em 0.5em 1em;
+  width: 500px;
+  transition: all 0.5s;
+}
+#search__btn, #search__input {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  outline: 0;
+}
+#search__btn {
+  cursor: pointer;
+  padding: 0 0.25em;
+}
+#search__input {
+  flex: 1;
+}
+#search__input::placeholder {
+  color: black;
+}
+
+.search__spinner {
+  animation: spinner 1s infinite linear;
+  display: none;
+  padding: 0 0.25em;
+}
+
+#search.loading .search__btn {
+  display: none;
+}
+
+#search.loading .search__spinner {
+  display: block;
+}
+
+@keyframes search__spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 body,
 html {
   font-family: "Open Sans", sans-serif;
@@ -191,6 +248,7 @@ html {
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 10px;
+  height: 100%;
 }
 
 .btn__cta {
@@ -201,12 +259,14 @@ html {
   cursor: pointer;
   outline: none;
   border: none;
+  border-radius: 8px;
 }
 .btn__cta:hover, .btn__cta:focus {
   outline: none;
   border: none;
   text-decoration: underline;
   transition: all 0.5s ease-in-out;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=index.css.map */

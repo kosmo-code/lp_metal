@@ -2,117 +2,115 @@
     <div>
         <section class="products-all">
             <div class="wrapper">
-                <div>
-                    <div>Каталог товаров</div>
-                    <div id="search" :class="{ 'search__loading': searchLoading }">
-                        <input class="search__input" type="text" id="input" placeholder="Поиск..." @keyup.enter="toggleSearchLoading" />
-                        <button class="search__btn" id="button" @click="toggleSearchLoading">
-                            <img src="/search.svg" alt="Search svg-icon">
-                        </button>
-                        <div class="search__spinner">
-                            <img src="/loader.svg" alt="Loader svg-icon">
-                        </div>
+                <div class="products-all__title">Весь каталог</div>
+                <div id="search" :class="{ 'search__loading': searchLoading }">
+                    <input class="search__input" type="text" id="input" placeholder="Поиск..." @keyup.enter="toggleSearchLoading" />
+                    <button class="search__btn" id="button" @click="toggleSearchLoading">
+                        <img src="/search.svg" alt="Search svg-icon">
+                    </button>
+                    <div class="search__spinner">
+                        <img src="/loader.svg" alt="Loader svg-icon">
                     </div>
-                    <div style="color: red">Фильтр по параметру</div>
-                    <div class="inner__wrapper">
-                        <h2 class="category__title">Каталог "Металлопрокат"</h2>
-                        <!--
-                        <div class="category__wrapper">
-                            <img class="arrow arrow__left" src="/left-arrow.svg" alt="Left arrow">
-                            <ul class="carousel">
-                                <li
-                                    class="card"
-                                    v-for="(card, index) in cards"
-                                    :key="index"
-                                >
-                                    <img :src="card.img" alt="Product Image">
-                                    <h2>{{ card.title }}</h2>
-                                    <NuxtLink to="" class="btn__cta">Подробнее</NuxtLink>
-                                </li>
-                            </ul>
-                            <img class="arrow arrow__right" src="/right-arrow.svg" alt="Right arrow">
-                        </div> -->
-                        <!-- Металлопрокат -->
-                        <div class="category__wrapper">
-                            <ul class="category-list">
-                                <li
-                                    class="card"
-                                    v-for="(roledMetalItem, idx) in rolledMetalList"
-                                >
-                                    <img :src="roledMetalItem.img" :alt="roledMetalItem.title">
-                                    <h2>{{ roledMetalItem.title }}</h2>
-                                    <NuxtLink to="" class="btn__cta">Подробнее</NuxtLink>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+                <div style="color: red">Фильтр по параметру</div>
+                <div class="inner__wrapper">
+                    <h2 class="category__title">Каталог "Металлопрокат"</h2>
+                    <!--
+                    <div class="category__wrapper">
+                        <img class="arrow arrow__left" src="/left-arrow.svg" alt="Left arrow">
+                        <ul class="carousel">
+                            <li
+                                class="card"
+                                v-for="(card, index) in cards"
+                                :key="index"
+                            >
+                                <img :src="card.img" alt="Product Image">
+                                <h2>{{ card.title }}</h2>
+                                <NuxtLink to="" class="btn__cta">Подробнее</NuxtLink>
+                            </li>
+                        </ul>
+                        <img class="arrow arrow__right" src="/right-arrow.svg" alt="Right arrow">
+                    </div> -->
+                    <!-- Металлопрокат -->
+                    <div class="category__wrapper">
+                        <ul class="category-list">
+                            <li
+                                class="card"
+                                v-for="(roledMetalItem, idx) in rolledMetalList"
+                            >
+                                <img :src="roledMetalItem.img" :alt="roledMetalItem.title">
+                                <h2>{{ roledMetalItem.title }}</h2>
+                                <NuxtLink :to="roledMetalItem.to" class="btn__cta">Подробнее</NuxtLink>
+                            </li>
+                        </ul>
                     </div>
+                </div>
 
-                    <!-- Труба -->
-                    <div class="inner__wrapper">
-                        <h2 class="category__title">Каталог "Труба"</h2>
-                        <div class="category__wrapper">
-                            <ul class="category-list">
-                                <li
-                                    class="card"
-                                    v-for="(tubeItem, idx) in tubeList"
-                                >
-                                    <img :src="tubeItem.img" :alt="tubeItem.title">
-                                    <h2>Труба {{ tubeItem.title }}</h2>
-                                    <NuxtLink to="" class="btn__cta">Подробнее</NuxtLink>
-                                </li>
-                            </ul>
-                        </div>
+                <!-- Труба -->
+                <div class="inner__wrapper">
+                    <h2 class="category__title">Каталог "Труба"</h2>
+                    <div class="category__wrapper">
+                        <ul class="category-list">
+                            <li
+                                class="card"
+                                v-for="(tubeItem, idx) in tubeList"
+                            >
+                                <img :src="tubeItem.img" :alt="tubeItem.title">
+                                <h2>Труба {{ tubeItem.title }}</h2>
+                                <NuxtLink to="" class="btn__cta">Подробнее</NuxtLink>
+                            </li>
+                        </ul>
                     </div>
+                </div>
 
-                    <!-- Лист -->
-                    <div class="inner__wrapper">
-                        <h2 class="category__title">Каталог "Лист"</h2>
-                        <div class="category__wrapper">
-                            <ul class="category-list">
-                                <li
-                                    class="card"
-                                    v-for="(sheetMetalItem, idx) in sheetMetalList"
-                                >
-                                    <img :src="sheetMetalItem.img" :alt="sheetMetalItem.title">
-                                    <h2>Лист {{ sheetMetalItem.title }}</h2>
-                                    <NuxtLink to="" class="btn__cta">Подробнее</NuxtLink>
-                                </li>
-                            </ul>
-                        </div>
+                <!-- Лист -->
+                <div class="inner__wrapper">
+                    <h2 class="category__title">Каталог "Лист"</h2>
+                    <div class="category__wrapper">
+                        <ul class="category-list">
+                            <li
+                                class="card"
+                                v-for="(sheetMetalItem, idx) in sheetMetalList"
+                            >
+                                <img :src="sheetMetalItem.img" :alt="sheetMetalItem.title">
+                                <h2>Лист {{ sheetMetalItem.title }}</h2>
+                                <NuxtLink to="" class="btn__cta">Подробнее</NuxtLink>
+                            </li>
+                        </ul>
                     </div>
+                </div>
 
-                    <!-- Сетка -->
-                    <div class="inner__wrapper">
-                        <h2 class="category__title">Каталог "Сетка"</h2>
-                        <div class="category__wrapper">
-                            <ul class="category-list">
-                                <li
-                                    class="card"
-                                    v-for="(gridItem, idx) in gridList"
-                                >
-                                    <img :src="gridItem.img" :alt="gridItem.title">
-                                    <h2>Лист {{ gridItem.title }}</h2>
-                                    <NuxtLink to="" class="btn__cta">Подробнее</NuxtLink>
-                                </li>
-                            </ul>
-                        </div>
+                <!-- Сетка -->
+                <div class="inner__wrapper">
+                    <h2 class="category__title">Каталог "Сетка"</h2>
+                    <div class="category__wrapper">
+                        <ul class="category-list">
+                            <li
+                                class="card"
+                                v-for="(gridItem, idx) in gridList"
+                            >
+                                <img :src="gridItem.img" :alt="gridItem.title">
+                                <h2>Лист {{ gridItem.title }}</h2>
+                                <NuxtLink to="" class="btn__cta">Подробнее</NuxtLink>
+                            </li>
+                        </ul>
                     </div>
+                </div>
 
-                    <!-- Еще -->
-                    <div class="inner__wrapper">
-                        <h2 class="category__title">Каталог "Еще"</h2>
-                        <div class="category__wrapper">
-                            <ul class="category-list">
-                                <li
-                                    class="card"
-                                    v-for="(moreItem, idx) in moreList"
-                                >
-                                    <img :src="moreItem.img" :alt="moreItem.title">
-                                    <h2>Лист {{ moreItem.title }}</h2>
-                                    <NuxtLink to="" class="btn__cta">Подробнее</NuxtLink>
-                                </li>
-                            </ul>
-                        </div>
+                <!-- Еще -->
+                <div class="inner__wrapper">
+                    <h2 class="category__title">Каталог "Еще"</h2>
+                    <div class="category__wrapper">
+                        <ul class="category-list">
+                            <li
+                                class="card"
+                                v-for="(moreItem, idx) in moreList"
+                            >
+                                <img :src="moreItem.img" :alt="moreItem.title">
+                                <h2>Лист {{ moreItem.title }}</h2>
+                                <NuxtLink to="" class="btn__cta">Подробнее</NuxtLink>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -145,91 +143,109 @@ export default {
                 id: 1,
                 img: "https://via.placeholder.com/150",
                 title: 'Арматура',
+                to: '/products/armatures'
             },
             {
                 id: 2,
                 img: "https://via.placeholder.com/150",
                 title: 'Круг',
+                to: '/products/circle',
             },
             {
                 id: 3,
                 img: "https://via.placeholder.com/150",
                 title: 'Пруток',
+                to: '/products/rod',
             },
             {
                 id: 4,
                 img: "https://via.placeholder.com/150",
                 title: 'Балка двутавровая',
+                to: '/products/I-beam',
             },
             {
                 id: 5,
                 img: "https://via.placeholder.com/150",
                 title: 'Катанка',
+                to: '/products/wire-rod',
             },
             {
                 id: 6,
                 img: "https://via.placeholder.com/150",
                 title: 'Квадрат',
+                to: '/products/square',
             },
             {
                 id: 7,
                 img: "https://via.placeholder.com/150",
                 title: 'Лента',
+                to: '/products/ribbon',
             },
             {
                 id: 8,
                 img: "https://via.placeholder.com/150",
                 title: 'Лист',
+                to: '/products/ribbon',
             },
             {
                 id: 9,
                 img: "https://via.placeholder.com/150",
                 title: 'Поковка',
+                to: '/products/ribbon',
             },
             {
                 id: 10,
                 img: "https://via.placeholder.com/150",
                 title: 'Полоса',
+                to: '/products/ribbon',
             },
             {
                 id: 11,
                 img: "https://via.placeholder.com/150",
                 title: 'Проволока',
+                to: '/products/ribbon',
             },
             {
                 id: 12,
                 img: "https://via.placeholder.com/150",
                 title: 'Рельс',
+                to: '/products/ribbon',
             },
             {
                 id: 13,
                 img: "https://via.placeholder.com/150",
                 title: 'Сетка',
+                to: '/products/ribbon',
             },
             {
                 id: 14,
                 img: "https://via.placeholder.com/150",
                 title: 'Труба',
+                to: '/products/ribbon',
             },
             {
                 id: 15,
                 img: "https://via.placeholder.com/150",
                 title: 'Уголок металлический',
+                to: '/products/ribbon',
             },
             {
                 id: 16,
                 img: "https://via.placeholder.com/150",
                 title: 'Швеллер металлический',
+                to: '/products/ribbon',
             },
             {
                 id: 17,
                 img: "https://via.placeholder.com/150",
                 title: 'Штрипс',
+                to: '/products/ribbon',
             },
             {
                 id: 18,
                 img: "https://via.placeholder.com/150",
                 title: 'Шестигранник',
+                to: '/products/ribbon',
             },
         ]);
 
@@ -238,6 +254,7 @@ export default {
                 id: 1,
                 img: "https://via.placeholder.com/150",
                 title: 'алюминиевая',
+                to: '/products/ribbon',
             },
             {
                 id: 2,
@@ -545,10 +562,6 @@ export default {
             },
         ]);
 
-        const showMoreBtn = ref(false);
-        // const categoryListLength = ref(cards.value.length);
-        // console.log(categoryListLength.value);
-
         return {
             searchLoading,
             toggleSearchLoading,
@@ -627,7 +640,7 @@ export default {
 
 .card {
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 2rem 1.5rem 3rem;
     width: 300px;
     height: 13rem;
@@ -688,68 +701,23 @@ export default {
     cursor: pointer;
 }
 
+.category__title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.25;
+    letter-spacing: 1.25px;
+}
 
 .products-all {
     padding: 6rem 1rem 1rem;
     margin: 2.5rem 0;
 }
 
-#search {
-  align-items: center;;
-  background: #F8F8F8;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  margin: 0.5em 0;
-  padding: 0.5em 0.5em 0.5em 1em;
-  width: 500px;
-  transition: all 0.5s;
-  &__btn,
-  &__input {
-    appearance: none;
-    background: transparent;
-    border: 0;
-    color: inherit;
-    font: inherit;
-    outline: 0;
-  }
-  &__btn {
-    cursor: pointer;
-    padding: 0 0.25em;
-  }
-  &__input {
-    flex: 1;
-    &::placeholder {
-      color: black;
-    }
-  }
-}
-.search__spinner {
-  animation: spinner 1s infinite linear;
-  display: none;
-  padding: 0 0.25em;
-}
-
-#search.loading {
-  .search__btn {
-    display: none;
-  }
-}
-#search.loading {
-  .search__spinner {
-    display: block;
-  }
-}
-
-// Animation
-
-@keyframes search__spinner {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.products-all__title {
+    font-weight: 700;
+    font-size: 2.75rem;
+    line-height: 1.5;
+    letter-spacing: 1.25px;
 }
 
 </style>
