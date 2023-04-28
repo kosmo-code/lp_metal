@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6497824b-1d87-40b6-9aa3-c1e01de1d9f5" name="Changes" comment="fix: contacts section and add adaptive for medium and large screens">
+    <list default="true" id="6497824b-1d87-40b6-9aa3-c1e01de1d9f5" name="Changes" comment="fix: fix width of card">
+      <change afterPath="$PROJECT_DIR$/assets/styles/search.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/products/armatures.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TheFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/TheFooter.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/products/all.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products/all.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,9 +23,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -41,23 +48,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "card-width",
-    "last_opened_file_path": "C:/Users/Tigran/Desktop/myCatalog/lp_metal/assets/images",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\Tigran\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\231.8109.174\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;armatures-page&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tigran/Desktop/myCatalog/lp_metal/assets/images&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Tigran\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\231.8109.174\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\assets\images" />
@@ -68,6 +75,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\pages" />
+      <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\pages\products\armatures" />
       <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\public" />
       <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\assets" />
     </key>
@@ -85,6 +93,7 @@
       <workItem from="1682097336832" duration="11471000" />
       <workItem from="1682487716105" duration="8000" />
       <workItem from="1682491655399" duration="17515000" />
+      <workItem from="1682672463041" duration="6480000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add catalogs section">
       <created>1681927313918</created>
@@ -125,6 +134,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add catalogs section" />
     <MESSAGE value="feat: add contacts component" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add contacts component" />
+    <MESSAGE value="fix: fix width of card" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fix width of card" />
   </component>
 </project>

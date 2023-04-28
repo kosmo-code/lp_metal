@@ -10,6 +10,7 @@
 @import "hero";
 @import "dropdown";
 @import "burger";
+@import "search";
 
 // Подключение плагина
 @import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -32,6 +33,7 @@ html {
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 10px;
+  height: 100%;
 }
 
 .btn__cta {
@@ -42,11 +44,13 @@ html {
   cursor: pointer;
   outline: none;
   border: none;
+  border-radius: 8px;
   &:hover,
   &:focus {
     outline: none;
     border: none;
     text-decoration: underline;
     transition: all .5s ease-in-out;
+    color: #FFFFFF;
   }
 }
