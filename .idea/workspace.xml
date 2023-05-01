@@ -4,24 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6497824b-1d87-40b6-9aa3-c1e01de1d9f5" name="Changes" comment="feat: add armature page">
-      <change afterPath="$PROJECT_DIR$/assets/styles/all.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/armatures.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/contacts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/products.scss" afterDir="false" />
+    <list default="true" id="6497824b-1d87-40b6-9aa3-c1e01de1d9f5" name="Changes" comment="feat: add page for truba-kruglaya with certain items">
+      <change afterPath="$PROJECT_DIR$/layouts/category-detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/products/metalprocat/armatures.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/armatures.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/hero.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/index.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TheContacts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/TheContacts.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TheHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/TheHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TheHero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/TheHero.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TheProducts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/TheProducts.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/products/all.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products/all.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/products/armatures.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products/armatures.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/products/armatures.vue" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Vue Single File Component" />
         <option value="SCSS File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -61,7 +56,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "correct-style",
+    "git-widget-placeholder": "armatura",
     "last_opened_file_path": "C:/Users/Tigran/Desktop/myCatalog/lp_metal/assets/images",
     "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
@@ -82,9 +77,11 @@
       <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\pages" />
+      <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\pages\products" />
+      <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\components" />
       <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\public" />
-      <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\assets" />
+      <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\pages\products\metalprocat" />
+      <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\pages\products\truba" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -108,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681927313918</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: add page for truba-kruglaya with certain items">
+      <created>1682702165642</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682702165642</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +144,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add catalogs section" />
     <MESSAGE value="feat: add contacts component" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add contacts component" />
+    <MESSAGE value="feat: add page for truba-kruglaya with certain items" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add page for truba-kruglaya with certain items" />
   </component>
 </project>
