@@ -15,32 +15,18 @@
                 <div style="color: red">Фильтр по параметру</div>
                 <div class="inner__wrapper">
                     <h2 class="category__title">Каталог "Металлопрокат"</h2>
-                    <!--
-                    <div class="category__wrapper">
-                        <img class="arrow arrow__left" src="/left-arrow.svg" alt="Left arrow">
-                        <ul class="carousel">
-                            <li
-                                class="card"
-                                v-for="(card, index) in cards"
-                                :key="index"
-                            >
-                                <img :src="card.img" alt="Product Image">
-                                <h2>{{ card.title }}</h2>
-                                <NuxtLink to="" class="btn__cta">Подробнее</NuxtLink>
-                            </li>
-                        </ul>
-                        <img class="arrow arrow__right" src="/right-arrow.svg" alt="Right arrow">
-                    </div> -->
                     <!-- Металлопрокат -->
                     <div class="category__wrapper">
                         <ul class="category-list">
                             <li
                                 class="card"
-                                v-for="(roledMetalItem, idx) in rolledMetalList"
+                                v-for="(rolledMetalItem, idx) in rolledMetalList"
                             >
-                                <img :src="roledMetalItem.img" :alt="roledMetalItem.title">
-                                <h2>{{ roledMetalItem.title }}</h2>
-                                <NuxtLink :to="roledMetalItem.to" class="btn__cta">Подробнее</NuxtLink>
+                                <img :src="rolledMetalItem.img" :alt="rolledMetalItem.title">
+                                <h2>{{ rolledMetalItem.title }}</h2>
+                                <NuxtLink :to="rolledMetalItem.to" class="btn__cta" >
+                                    Подробнее
+                                </NuxtLink>
                             </li>
                         </ul>
                     </div>
@@ -120,11 +106,16 @@
 
 <script>
 import Default from "~/layouts/default.vue";
+import Armatures from "~/pages/products/metalprocat/armatures.vue";
 
 export default {
     name: "all",
-    components: {Default},
+    components: {Armatures, Default},
     setup() {
+        const card = ref(false);
+
+        const showCard = () => card.value = !card.value;
+
         const searchLoading = ref(true);
 
         const toggleSearchLoading = () => {
@@ -142,7 +133,7 @@ export default {
                 id: 1,
                 img: "https://via.placeholder.com/150",
                 title: 'Арматура',
-                to: '/products/armatures'
+                to: '/products/metalprocat/armatures'
             },
             {
                 id: 2,
@@ -602,6 +593,8 @@ export default {
             sheetMetalList,
             gridList,
             moreList,
+            showCard,
+            card,
         };
     },
 }
@@ -609,35 +602,4 @@ export default {
 
 <style scoped lang="scss">
 @import "assets/styles/index";
-
-.arrow {
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1rem;
-    height: 1rem;
-    border: 1px solid #cccccc;
-    border-radius: 50px;
-    padding: .5rem;
-    cursor: pointer;
-    position: absolute;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, .23);
-    &:hover,
-    &:focus {
-        background-color: #cccccc;
-        transition: background-color .75s;
-    }
-    &__left {
-        left: -22px;
-    }
-    &__right {
-        right: -22px;
-    }
-}
-.carousel {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 4) - .75rem);
-    gap: 1rem;
-    overflow: hidden;
-}
 </style>

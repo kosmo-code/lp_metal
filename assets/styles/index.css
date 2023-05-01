@@ -3,7 +3,6 @@
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 .header {
   height: 5rem;
-  padding: 0 2rem;
   position: fixed;
   z-index: 20;
   top: 0;
@@ -428,7 +427,7 @@ input[type=submit] {
   }
 }
 .footer {
-  height: 90px;
+  height: 5rem;
   background: #F8F8F8;
   position: relative;
 }
@@ -732,17 +731,17 @@ label:after {
 }
 body,
 html {
+  height: 100%;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   background: #F8F8F8;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .wrapper {
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 10px;
-  height: 100%;
 }
 
 .btn__cta {
@@ -759,8 +758,9 @@ html {
   outline: none;
   border: none;
   text-decoration: underline;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.25s ease-in-out;
   color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 /*# sourceMappingURL=index.css.map */
