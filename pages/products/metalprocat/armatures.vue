@@ -1,5 +1,6 @@
 <template>
     <div>
+        <popup-modal-cta @on-close-form="" v-if="showModal" @hide-form="showModal = false" />
         <h3 class="armatures__title">Арматура</h3>
         <div class="armatures__info__props">
             <div class="armatures__info__props-material">
@@ -46,15 +47,19 @@
             </div>
             <!-- /.armatures__info__surface -->
         </div>
-        <button class="btn__cta mt-2">Рассчитать стоимость</button>
+        <button class="btn__cta mt-2" @click="showModal = true">Рассчитать стоимость</button>
     </div>
 </template>
 
 <script>
 
+import PopupModalCta from "~/components/PopupModalCTA.vue";
+
 export default {
     name: "armatures",
+    components: {PopupModalCta},
     setup() {
+        const showModal = ref(false);
         const armaturesList = ref([
             {
                 id: 1,
@@ -148,6 +153,7 @@ export default {
 
         return {
             armaturesList,
+            showModal,
         };
     },
 }
