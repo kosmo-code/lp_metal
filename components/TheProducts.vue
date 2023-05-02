@@ -17,7 +17,9 @@
                     </div>
                     <div class="products__content__card">
                         <NuxtLink to="">
-                            <img class="products__content__card-img" src="https://mb1.ru/upload/iblock/c13/d5tl9pv0oj6kci93krsafkg1czi35o6s.png" alt="Photo of category">
+                            <div class="products__content__card-img">
+                                <img class="" src="/armatures.png" alt="Armatures Category Image">
+                            </div>
                             <h3 class="products__content__card-title">Мателлопрокат</h3>
                             <p>Арматура</p>
                             <p>Квадрат</p>
@@ -31,7 +33,9 @@
                     <!-- col-2 -->
                     <div class="products__content__card">
                         <NuxtLink to="">
-                            <img class="products__content__card-img" src="https://mb1.ru/upload/iblock/c13/d5tl9pv0oj6kci93krsafkg1czi35o6s.png" alt="Photo of category">
+                            <div class="products__content__card-img">
+                                <img class="" src="/truba.png" alt="Photo of category">
+                            </div>
                             <h3 class="products__content__card-title">Труба</h3>
                             <p>Труба круглая</p>
                             <p>Труба профильная</p>
@@ -45,7 +49,9 @@
                     <!-- col-3 -->
                     <div class="products__content__card">
                         <NuxtLink to="">
-                            <img class="products__content__card-img" src="https://mb1.ru/upload/iblock/c13/d5tl9pv0oj6kci93krsafkg1czi35o6s.png" alt="Photo of category">
+                            <div class="products__content__card-img">
+                                <img class="" src="/list.png" alt="Photo of category">
+                            </div>
                             <h3 class="products__content__card-title">Лист</h3>
                             <p>Лист гладкий</p>
                             <p>Лист рифленый</p>
@@ -56,7 +62,9 @@
                     </div>
                     <div class="products__content__card">
                         <NuxtLink to="">
-                            <img class="products__content__card-img" src="https://mb1.ru/upload/iblock/c13/d5tl9pv0oj6kci93krsafkg1czi35o6s.png" alt="Photo of category">
+                            <div class="products__content__card-img">
+                                <img class="" src="/setka.png" alt="Photo of category">
+                            </div>
                             <h3 class="products__content__card-title">Сетка</h3>
                             <p>Сетка рабица</p>
                             <p>Сетка тканая</p>
@@ -67,7 +75,9 @@
                     </div>
                     <div class="products__content__card">
                         <NuxtLink to="">
-                            <img class="products__content__card-img" src="https://mb1.ru/upload/iblock/c13/d5tl9pv0oj6kci93krsafkg1czi35o6s.png" alt="Photo of category">
+                            <div class="products__content__card-img">
+                                <img class="" src="/threeDots.svg" alt="Photo of category">
+                            </div>
                             <h3 class="products__content__card-title">Проволока</h3>
                             <h3 class="products__content__card-title">Трубопроводная арматура</h3>
                             <h3 class="products__content__card-title">АТИ</h3>

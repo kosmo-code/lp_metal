@@ -1,30 +1,34 @@
 <template>
-  <div class="modal-overlay" @click.stop="hideForm">
-      <div class="modal">
-          <form action="" class="request" @submit.prevent>
-              <div class="form-control">
-                  <label class="request__label" for="name">Имя:</label>
-                  <input class="request__input" type="text" id="name" name="name" required placeholder="Введите ваше имя">
-              </div>
+    <teleport to="body">
+        <div class="modal-overlay" @click.stop="hideForm">
+            <div class="modal" @click.stop>
+                <div class="modal__title">Оставьте заявку</div>
+                <span class="modal__description">Свяжитесь с нами, наши менеджеры будут рады помочь вам</span>
+                <form action="" class="request" @submit.prevent>
+                    <div class="form-control">
+                        <label class="request__label" for="name">Имя:</label>
+                        <input class="request__input" type="text" id="name" name="name" required placeholder="Введите ваше имя">
+                    </div>
 
-              <div class="form-control">
-                  <label class="request__label" for="email">Email:</label>
-                  <input class="request__input" type="text" id="email" name="email" required placeholder="Введите вашу почту">
-              </div>
+                    <div class="form-control">
+                        <label class="request__label" for="email">Email:</label>
+                        <input class="request__input" type="text" id="email" name="email" required placeholder="Введите вашу почту">
+                    </div>
 
-              <div class="form-control">
-                  <label class="request__label" for="phone">Номер телефона: </label>
-                  <input class="request__input" type="tel" id="phone" name="phone" required placeholder="Введите ваш номер телефона">
-              </div>
+                    <div class="form-control">
+                        <label class="request__label" for="phone">Номер телефона: </label>
+                        <input class="request__input" type="tel" id="phone" name="phone" required placeholder="Введите ваш номер телефона">
+                    </div>
 
-              <button type="submit" class="btn__cta-contacts mt-4">Отправить заявку</button>
-          </form>
-      </div>
-      <!-- ./modal -->
-      <div class="close">
-          <img class="close-img" src="/close.svg" alt="Close image" />
-      </div>
-  </div>
+                    <button type="submit" class="btn__cta-contacts mt-4">Отправить заявку</button>
+                </form>
+            </div>
+            <!-- ./modal -->
+            <div class="close">
+                <img class="close-img" src="/close.svg" alt="Close image" />
+            </div>
+        </div>
+    </teleport>
 </template>
 
 <script>
@@ -49,7 +53,7 @@ export default {
 @import "assets/styles/index";
 
 .mt-4 {
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 .modal-overlay {
   position: fixed;
@@ -65,11 +69,24 @@ export default {
 .modal {
   text-align: center;
   background-color: white;
-  max-height: 300px;
-  width: 600px;
+  height: 350px;
+  width: 700px;
   margin-top: 10%;
   padding: 60px 0;
   border-radius: 20px;
+}
+.modal__title {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.modal__description {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+.request {
+    margin: 1rem;
+    padding-top: 1rem;
 }
 .close {
   margin: 10% 0 0 16px;
@@ -78,10 +95,6 @@ export default {
 
 .close-img {
   width: 25px;
-}
-
-.request {
-
 }
 
 .form-control {

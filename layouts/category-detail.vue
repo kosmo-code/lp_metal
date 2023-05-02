@@ -9,7 +9,7 @@
                     <slot />
                 </div>
                 <div class="category__img">
-                    <img src="/armatures.png" alt="Category IMG">
+                    <img src="/armatures-detail.png" alt="Category IMG">
                 </div>
                 <!-- /.category__info -->
             </div>
@@ -55,6 +55,7 @@ export default {
 }
 .category__wrapper {
     display: grid;
+    align-items: center;
     //padding: 2rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     max-width: 80rem;
