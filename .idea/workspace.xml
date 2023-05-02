@@ -4,19 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6497824b-1d87-40b6-9aa3-c1e01de1d9f5" name="Changes" comment="feat: add page for truba-kruglaya with certain items">
-      <change afterPath="$PROJECT_DIR$/layouts/category-detail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/products/metalprocat/armatures.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/armatures.png" afterDir="false" />
+    <list default="true" id="6497824b-1d87-40b6-9aa3-c1e01de1d9f5" name="Changes" comment="feat: add modal popap">
+      <change afterPath="$PROJECT_DIR$/public/armatures-detail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/setka.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/threeDots.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/truba.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/products/all.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products/all.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/products/armatures.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PopupModalCTA.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/PopupModalCTA.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TheProducts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/TheProducts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/category-detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/category-detail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/armatures.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/armatures.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,25 +57,25 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "armatura",
-    "last_opened_file_path": "C:/Users/Tigran/Desktop/myCatalog/lp_metal/assets/images",
+    "git-widget-placeholder": "catalogs-main-img",
+    "last_opened_file_path": "C:/Users/Tigran/Desktop/myCatalog/lp_metal/public",
     "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\Tigran\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\231.8109.174\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "C:\\Users\\Tigran\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\231.8770.64\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\public" />
       <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\assets\images" />
       <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\assets" />
       <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal" />
       <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\public\images" />
-      <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Tigran\Desktop\myCatalog\lp_metal\pages\products" />
@@ -97,6 +98,7 @@
       <workItem from="1682097336832" duration="11471000" />
       <workItem from="1682487716105" duration="8000" />
       <workItem from="1682491655399" duration="17515000" />
+      <workItem from="1683044733783" duration="2789000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add catalogs section">
       <created>1681927313918</created>
@@ -112,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682702165642</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: add modal popap">
+      <created>1682951989807</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682951989807</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +154,7 @@
     <MESSAGE value="feat: add catalogs section" />
     <MESSAGE value="feat: add contacts component" />
     <MESSAGE value="feat: add page for truba-kruglaya with certain items" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add page for truba-kruglaya with certain items" />
+    <MESSAGE value="feat: add modal popap" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add modal popap" />
   </component>
 </project>

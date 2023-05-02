@@ -8,7 +8,7 @@ $lightgrey: #F8F8F8;
   top: 0;
   left: 0;
   right: 0;
-  background-color: #fff;
+  background: #F8F8F8;
   border-bottom: 1px solid #eaecef;
   width: 100vw;
   font-size: 18px;
@@ -38,8 +38,11 @@ $lightgrey: #F8F8F8;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  //margin-left: 2rem;
+  margin-right: 20rem;
+  padding: 10px 20px;
+  background: red;
+  margin-top: -10px;
 }
 
 .header-menu__contacts {
